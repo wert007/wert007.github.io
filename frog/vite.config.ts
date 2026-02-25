@@ -1,9 +1,9 @@
-import { defineConfig } from 'vite';
-import tsconfigPaths from 'vite-tsconfig-paths';
+import { defineConfig } from "vite";
+import tsconfigPaths from "vite-tsconfig-paths";
 // import basicSsl from '@vitejs/plugin-basic-ssl';
 
 export default defineConfig({
-  base: '/typescript-template',
+  base: "/frog/dist",
   plugins: [
     // Allows using the compilerOptions.paths property in tsconfig.json.
     // https://www.npmjs.com/package/vite-tsconfig-paths
@@ -13,9 +13,9 @@ export default defineConfig({
     // basicSsl(),
   ],
   build: {
-    target: 'esnext',
+    target: "esnext",
   },
-  publicDir: './public',
+  publicDir: "./frog/dist",
   server: {
     // Uncomment this line if you want to expose your dev server and access it from the devices
     // in the same network.
